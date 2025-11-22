@@ -1,0 +1,90 @@
+ /* Styles for form layout */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Style to control the width of input boxes */
+form .form-control {
+    width: 100%; /* Reduce the width of the text boxes */
+    margin: 0 auto; /* Center the text boxes */
+}
+
+button {
+    margin-top: 1rem;
+    width: 80%; /* Match button width to text boxes */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track color */
+    border-radius: 10px; /* Rounded scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Scrollbar thumb color (customize this) */
+    border-radius: 10px; /* Make the scrollbar thumb rounded */
+    border: 3px solid #f1f1f1; /* Add a border to enhance roundness */
+}
+
+.navbar-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    margin-top: 5px;
+}
+
+.login-border {
+    border: solid 1px #ddd;
+    margin-top: 40px;
+    padding-top: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+
+.btn-stockx{
+    background-color: #006340;
+   color: white;
+}
+
+.btn-stockx:hover{
+    background-color: #015034;
+    color: white;
+}
+
+ 

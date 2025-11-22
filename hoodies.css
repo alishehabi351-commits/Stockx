@@ -1,0 +1,140 @@
+ /* Styles for the navbar */
+ .navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Custom styles for dropdown menus */
+.dropdown-menu {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Change background on hover */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track color */
+    border-radius: 10px; /* Rounded scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Scrollbar thumb color (customize this) */
+    border-radius: 10px; /* Make the scrollbar thumb rounded */
+    border: 3px solid #f1f1f1; /* Add a border to enhance roundness */
+}
+
+
+
+ .backtotopbtn {
+    text-decoration: none !important;
+}
+
+.hoverbtn {
+    background-color: white;
+    border: none;
+}
+
+
+.sidebarproduct {
+    background-color: white;
+    border: none;
+    text-decoration: none !important;
+}
+
+
+.sidebarproduct:hover {
+    text-decoration: underline;
+
+}
+
+
+
+.body {
+    font-family: monospace;
+}
+
+.hoverbtn:hover {
+    text-decoration: underline;
+}
+
+
+
+.round-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #006340;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.round-button:hover {
+    background-color: white;
+    border:solid 2px  #006340;
+    color: black;
+}
+
+
+
+
+.Sidebarhome {
+   
+    padding: 8px 16px;
+    padding-right: 150px;
+    
+   
+   
+   
+   }
+   
+   
+   .homeicon{
+       margin-bottom: 4px;
+       margin-right: 3px;
+   }
+   
+   
+   .sidebarhr {
+       margin-bottom:px;
+   }
+   
+   
+   .shippingicon {
+       margin-bottom: 2px;
+       margin-right: 5px;
+   }
+   
+   
+   .contacticon {
+       margin-bottom: 2px;
+       margin-right: 5px;
+   }
+   
+   .productsicon {
+       margin-bottom: 2px;
+       margin-right: 5px;
+   }
