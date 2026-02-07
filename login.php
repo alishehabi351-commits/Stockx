@@ -20,7 +20,7 @@
 
             <?php
             if (isset($_SESSION['error'])) {
-                echo "<div class='alert alert-danger text-center'>" . $_SESSION['error'] . "</div>";
+                echo "<div class='alert alert-danger text-center'>" . "Incorrect Credentials" . "</div>";
                 unset($_SESSION['error']);
             }
             ?>
