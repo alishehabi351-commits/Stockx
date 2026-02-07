@@ -29,8 +29,11 @@
 
         else {
             if($tempPass != $confirmTempPass) {
-                echo "Passwords do not match";
-                return;
+                echo "Passwords do not match. Redirecting in 5s";
+
+                
+                echo '<meta http-equiv="refresh" content="5;url=signup.php">';
+                exit;
             }
 
             $sql = "INSERT INTO users (username, email, password, confirm_password) 
