@@ -1,89 +1,90 @@
- /* Styles for form layout */
-body {
-    background-color: #fff;
+
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #e9ecef);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding-top: 50px;
+
+.login-wrapper {
+    width: 100%;
+    padding: 20px;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+
+.login-card {
+    max-width: 420px;
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 0.5s ease;
 }
 
-/* Style to control the width of input boxes */
-form .form-control {
-    width: 100%; /* Reduce the width of the text boxes */
-    margin: 0 auto; /* Center the text boxes */
+
+.login-card h2 {
+    font-weight: 700;
+    color: #111;
 }
 
-button {
-    margin-top: 1rem;
-    width: 80%; /* Match button width to text boxes */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+.form-control {
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    font-size: 0.95rem;
 }
 
-p {
-    margin-top: 1.5rem;
-    text-align: center;
+.form-control:focus {
+    border-color: #006340;
+    box-shadow: 0 0 0 0.15rem rgba(0, 99, 64, 0.25);
 }
 
-a {
-    color: #007bff;
+
+.btn-login {
+    background: #006340;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #014d32;
+    transform: translateY(-1px);
+    color: white;
+}
+
+
+.login-card a {
+    color: #006340;
+    font-weight: 500;
     text-decoration: none;
 }
 
-a:hover {
+.login-card a:hover {
     text-decoration: underline;
 }
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 12px; /* Adjust scrollbar width */
-}
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Scrollbar track color */
-    border-radius: 10px; /* Rounded scrollbar track */
-}
 
-::-webkit-scrollbar-thumb {
-    background-color: #007bff; /* Scrollbar thumb color (customize this) */
-    border-radius: 10px; /* Make the scrollbar thumb rounded */
-    border: 3px solid #f1f1f1; /* Add a border to enhance roundness */
+.backhome a {
+    font-size: 0.9rem;
+    color: #666;
 }
 
 
-.navbar-img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block; 
-    margin-top: 5px;
-}
-
-
-
-.login-border {
-    border: 1px solid #ddd;
-    margin-top: 40px;
-    padding-top: 0;
-    border-radius:8px ;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: white;
-    padding-bottom: 20px;
-}
-
-
-.btn-stockx{
-    background-color: #006340;
-   color: white;
-}
-
-.btn-stockx:hover{
-    background-color: #015034;
-    color: white;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

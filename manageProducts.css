@@ -1,0 +1,196 @@
+/* ===== Base ===== */
+body {
+    background: #f4f6f9;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #2c3e50;
+}
+
+h1 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+/* ===== Main Card ===== */
+.container {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease;
+}
+
+/* ===== Add Product Button ===== */
+a[href*="addProduct"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #0d6efd;
+    color: #fff !important;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+a[href*="addProduct"]:hover {
+    background: #0b5ed7;
+    transform: translateY(-1px);
+}
+
+a[href*="addProduct"] svg {
+    fill: white;
+}
+
+/* ===== Table ===== */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead tr {
+    background: linear-gradient(135deg, #1e1e2f, #343a40);
+    color: #ffffff;
+}
+
+.table thead th {
+    padding: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border: none;
+}
+
+.table tbody td {
+    padding: 14px;
+    font-size: 14px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.table tbody tr {
+    transition: background 0.2s ease, transform 0.12s ease;
+}
+
+.table tbody tr:hover {
+    background: #f1f3f5;
+    transform: scale(1.003);
+}
+
+/* ===== Product Image ===== */
+.table img {
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.table img:hover {
+    transform: scale(1.08);
+}
+
+/* ===== View Link ===== */
+.table a[href*="buypage"] {
+    color: #0d6efd;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.table a[href*="buypage"]:hover {
+    text-decoration: underline;
+}
+
+/* ===== Action Icons ===== */
+.table td a svg {
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.15s ease, fill 0.2s ease;
+}
+
+.table td a:hover svg {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.table td a:first-child:hover svg {
+    fill: #0d6efd;
+}
+
+.table td a:last-child:hover svg {
+    fill: #dc3545;
+}
+
+/* ===== Pagination ===== */
+.pagination {
+    background: #ffffff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.page-link {
+    border: none;
+    border-radius: 8px !important;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.page-link:hover {
+    background: #0d6efd;
+    color: black !important;
+    transform: translateY(-1px);
+}
+
+.page-info {
+    font-weight: 600;
+    color: #6c757d;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ced4da;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #adb5bd;
+}
+
+/* ===== Mobile Polish ===== */
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .table img {
+        width: 70px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}

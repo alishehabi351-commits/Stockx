@@ -1,0 +1,98 @@
+
+.stockx-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0fad69; 
+}
+
+
+.search-input {
+    border-radius: 10px;
+    padding-left: 15px;
+    font-weight: bold !important;
+}
+
+
+
+
+.login-btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.signup-btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+.menu_btn {
+    width: 26px;
+    height: 26px;
+}
+
+.side_btn{
+    margin-left: -15px;
+}
+
+
+.xbutton {
+    border: 1px black solid;
+    
+    border-radius: 50%;
+
+}
+
+
+.mainnav {
+    justify-content: end;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .search-input {
+        border-radius: 12px;
+        padding: 12px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+    .navbar form#searchForm {
+        max-width: 650px;      /* increase search width */
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .mainnav {
+        margin-left: auto;
+        padding-left: 2rem; /* space between search and buttons */
+    }
+
+    .navbar-nav {
+        gap: 12px; /* spacing between buttons */
+    }
+}
+
